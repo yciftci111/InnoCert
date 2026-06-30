@@ -1,98 +1,265 @@
-# InnoCert — website
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diensten — InnoCert</title>
+<meta name="description" content="Overzicht van alle certificerings- en auditdiensten van InnoCert: ISO 9001, ISO 14001, ISO 55000, NEN 2767, ISO 3834, NEN 1090, BRL 0512, BRL 0503.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-Statische website (puur HTML/CSS/JS, geen build-stap) voor InnoCert, klaar om via GitHub te beheren en met GitHub Pages te publiceren.
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.svg" alt="InnoCert logo">
+      <span class="brand-name">InnoCert<span>Certificering &amp; Audit</span></span>
+    </a>
+    <nav class="nav-main" id="nav-main">
+      <a href="index.html">Home</a>
+      <a href="diensten.html" class="active">Diensten</a>
+      <a href="over-ons.html">Over ons</a>
+      <a href="blog.html">Blog &amp; Nieuws</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Offerte aanvragen <span class="btn-arrow">→</span></a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu openen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-## Structuur
+<main>
 
-```
-index.html                  Homepage
-diensten.html                Alle diensten + sectie per certificering (ISO 9001, ISO 14001, ISO 55000, NEN 2767, ISO 3834, NEN 1090, BRL 0512, BRL 0503)
-over-ons.html                Over InnoCert
-contact.html                 Contactformulier (nog niet gekoppeld aan een verzendservice, zie hieronder)
-blog.html                    Blog-overzicht
-blog-artikel-voorbeeld.html  Sjabloon voor een los blogartikel — kopieer dit bestand voor elk nieuw artikel
-css/style.css                Alle styling (kleuren/lettertypen bovenaan als CSS-variabelen)
-js/main.js                   Mobiel menu + (placeholder) verwerking contactformulier
-assets/logo.svg              Logo (stempel-beeldmerk), ook gebruikt als favicon
-```
+  <section class="page-header">
+    <div class="wrap">
+      <p class="eyebrow">Diensten</p>
+      <h1>Certificering &amp; audit, per norm</h1>
+      <p class="lede">Acht normen, één werkwijze: onafhankelijk, transparant en met een vast aanspreekpunt. Spring direct naar de norm die voor jou relevant is.</p>
+      <nav class="toc" aria-label="Snel naar norm">
+        <a href="#iso9001">ISO 9001</a>
+        <a href="#iso14001">ISO 14001</a>
+        <a href="#iso55000">ISO 55000</a>
+        <a href="#nen2767">NEN 2767</a>
+        <a href="#iso3834">ISO 3834</a>
+        <a href="#nen1090">NEN 1090</a>
+        <a href="#brl0512">BRL 0512</a>
+        <a href="#brl0503">BRL 0503</a>
+      </nav>
+    </div>
+  </section>
 
-## 1. Op GitHub zetten
+  <article class="cert-detail" id="iso9001">
+    <div class="wrap">
+      <div class="cert-detail-head">
+        <span class="cert-code">ISO 9001:2015</span>
+        <h2>Kwaliteitsmanagement</h2>
+      </div>
+      <div class="cert-detail-body">
+        <p>ISO 9001 is de internationale norm voor kwaliteitsmanagementsystemen. De norm helpt organisaties processen te structureren rond klanttevredenheid, risicobeheersing en continue verbetering.</p>
+        <p>InnoCert begeleidt zowel de opbouw van een nieuw managementsysteem als de audit van een bestaand systeem, en sluit aan op de omvang en het type organisatie.</p>
+        <ul>
+          <li>Geschikt voor organisaties van elke omvang en sector</li>
+          <li>Combineerbaar met ISO 14001 en andere managementsystemen</li>
+          <li>Inclusief praktisch verbeteradvies na de audit</li>
+        </ul>
+        <a href="contact.html" class="btn btn-ghost">Vraag een offerte voor ISO 9001 →</a>
+      </div>
+    </div>
+  </article>
 
-1. Maak een nieuwe **public** repository aan op GitHub, bijv. `innocert-website`.
-2. Upload alle bestanden uit deze map naar de root van die repository (via de GitHub-website met "Add file → Upload files", of via git).
-3. Ga naar **Settings → Pages**.
-4. Bij **Branch**, kies `main` en map `/ (root)` → **Save**.
-5. Na een paar minuten is de site bereikbaar op `https://<jouw-gebruikersnaam>.github.io/innocert-website/`.
+  <article class="cert-detail" id="iso14001">
+    <div class="wrap">
+      <div class="cert-detail-head">
+        <span class="cert-code">ISO 14001:2015</span>
+        <h2>Milieumanagement</h2>
+      </div>
+      <div class="cert-detail-body">
+        <p>ISO 14001 richt zich op het structureel beheersen van de milieu-impact van een organisatie: van energieverbruik tot afvalstromen en wettelijke milieueisen.</p>
+        <p>We beoordelen of je milieumanagementsysteem aantoonbaar werkt en helpen waar nodig met concrete verbeterstappen richting certificering.</p>
+        <ul>
+          <li>Aansluitend op relevante milieuwet- en regelgeving</li>
+          <li>Goed te combineren met ISO 9001-trajecten</li>
+          <li>Focus op meetbare en haalbare doelstellingen</li>
+        </ul>
+        <a href="contact.html" class="btn btn-ghost">Vraag een offerte voor ISO 14001 →</a>
+      </div>
+    </div>
+  </article>
 
-## 2. Eigen domein koppelen (innocert.nl)
+  <article class="cert-detail" id="iso55000">
+    <div class="wrap">
+      <div class="cert-detail-head">
+        <span class="cert-code">ISO 55000</span>
+        <h2>Assetmanagement</h2>
+      </div>
+      <div class="cert-detail-body">
+        <p>De ISO 55000-serie beschrijft hoe organisaties hun fysieke bedrijfsmiddelen — van machines tot infrastructuur — gestructureerd en risicogestuurd beheren over de hele levenscyclus.</p>
+        <p>InnoCert toetst of beleid, plannen en uitvoering op elkaar aansluiten, en adviseert over een realistische groeipad richting volledige naleving.</p>
+        <ul>
+          <li>Geschikt voor vastgoed, infrastructuur en productiemiddelen</li>
+          <li>Aandacht voor risico, kosten en prestaties in samenhang</li>
+          <li>Praktisch stappenplan bij een eerste trajectstart</li>
+        </ul>
+        <a href="contact.html" class="btn btn-ghost">Vraag een offerte voor ISO 55000 →</a>
+      </div>
+    </div>
+  </article>
 
-Je huidige DNS-zone bij je provider (het paneel met "Huidige DNS records") bevat dit:
+  <article class="cert-detail" id="nen2767">
+    <div class="wrap">
+      <div class="cert-detail-head">
+        <span class="cert-code">NEN 2767</span>
+        <h2>Conditiemeting vastgoed</h2>
+      </div>
+      <div class="cert-detail-body">
+        <p>NEN 2767 is de Nederlandse systematiek voor het objectief vaststellen van de technische conditie van bouw- en installatiedelen, met een score van 1 (uitstekend) tot 6 (zeer slecht).</p>
+        <p>We voeren conditiemetingen uit die direct bruikbaar zijn voor onderhoudsplanning en begroting, met heldere rapportage per bouwdeel.</p>
+        <ul>
+          <li>Objectieve, herhaalbare scoringsmethodiek</li>
+          <li>Direct te gebruiken voor meerjarenonderhoudsplannen</li>
+          <li>Geschikt voor woningcorporaties, VvE's en vastgoedbeheerders</li>
+        </ul>
+        <a href="contact.html" class="btn btn-ghost">Vraag een offerte voor NEN 2767 →</a>
+      </div>
+    </div>
+  </article>
 
-| Naam | Type | Content | Actie |
-|---|---|---|---|
-| `www` | A | 185.104.28.238 | **Vervangen** door CNAME → `<jouw-gebruikersnaam>.github.io` |
-| `www` | AAAA | 2a06:2ec0:1::ffed | **Verwijderen** (vervalt samen met de A-record hierboven) |
-| `@` | A | 185.104.28.238 | **Vervangen** door 4 A-records (zie hieronder) |
-| `@` | AAAA | 2a06:2ec0:1::ffed | **Vervangen** door 4 AAAA-records (optioneel, zie hieronder) |
-| `ftp` | A / AAAA | 185.104.28.238 / 2a06:2ec0:1::ffed | **Laten staan** — alleen aanpassen als je geen FTP-toegang tot de oude hosting meer nodig hebt |
-| `mail` | A / AAAA | 185.104.28.238 / 2a06:2ec0:1::ffed | **Niet aanraken** — anders werkt je e-mail niet meer |
-| `@` | NS (3x, ns.zxcs.\*) | — | **Niet aanraken** |
-| `_domainkey`, `_dmarc`, `@` (SPF) | TXT | — | **Niet aanraken** — belangrijk voor e-mailafzending/DKIM/DMARC/SPF |
+  <article class="cert-detail" id="iso3834">
+    <div class="wrap">
+      <div class="cert-detail-head">
+        <span class="cert-code">ISO 3834</span>
+        <h2>Kwaliteitseisen lasprocessen</h2>
+      </div>
+      <div class="cert-detail-body">
+        <p>ISO 3834 stelt kwaliteitseisen aan het smeltlassen van metalen materialen — van personeelskwalificatie tot procesbeheersing en lasdocumentatie.</p>
+        <p>InnoCert beoordeelt of jouw lasorganisatie aantoonbaar voldoet aan het gekozen kwaliteitsniveau binnen de norm.</p>
+        <ul>
+          <li>Relevant voor staalbouw, machinebouw en constructiewerkplaatsen</li>
+          <li>Vaak een eis bij aanbestedingen en CE-markering</li>
+          <li>Beoordeling van personeel, materiaal en proces in samenhang</li>
+        </ul>
+        <a href="contact.html" class="btn btn-ghost">Vraag een offerte voor ISO 3834 →</a>
+      </div>
+    </div>
+  </article>
 
-### Stap voor stap
+  <article class="cert-detail" id="nen1090">
+    <div class="wrap">
+      <div class="cert-detail-head">
+        <span class="cert-code">NEN 1090</span>
+        <h2>Staal- &amp; aluminiumconstructies</h2>
+      </div>
+      <div class="cert-detail-body">
+        <p>NEN 1090 beschrijft de uitvoeringseisen voor staal- en aluminiumconstructies en is nauw verbonden met de CE-markering van constructieve bouwproducten.</p>
+        <p>We toetsen productieproces, lasverbindingen en documentatie aan de toepasselijke uitvoeringsklasse (EXC).</p>
+        <ul>
+          <li>Vereist voor CE-markering van constructieve staalbouw</li>
+          <li>Sluit aan op ISO 3834 voor de laskwalificatie</li>
+          <li>Begeleiding bij eerste certificering of hercertificering</li>
+        </ul>
+        <a href="contact.html" class="btn btn-ghost">Vraag een offerte voor NEN 1090 →</a>
+      </div>
+    </div>
+  </article>
 
-1. **Verwijder** de bestaande `www` A-record en `www` AAAA-record.
-2. **Voeg toe**: `www` CNAME → `<jouw-gebruikersnaam>.github.io` (TTL mag op 24h blijven staan, of lager zoals 1h tijdens het overzetten).
-3. **Verwijder** de bestaande `@` (kale domein) A-record.
-4. **Voeg toe**: vier `@` A-records, elk met TTL 24h (of lager):
-   ```
-   185.199.108.153
-   185.199.109.153
-   185.199.110.153
-   185.199.111.153
-   ```
-5. *(Optioneel, voor IPv6)* **Vervang** de bestaande `@` AAAA-record door deze vier:
-   ```
-   2606:50c0:8000::153
-   2606:50c0:8001::153
-   2606:50c0:8002::153
-   2606:50c0:8003::153
-   ```
-   Doe je dit niet, dan werkt de site gewoon over IPv4 — dit is geen verplichte stap.
-6. Laat `ftp`, `mail`, de drie `NS`-records en de drie `TXT`-records (`_domainkey`, `_dmarc`, SPF) **ongewijzigd** — die hebben niets met de website te maken en raken anders je e-mail kwijt.
-7. In de GitHub-repository: maak een bestand **`CNAME`** (geen extensie) in de root met als inhoud:
-   ```
-   innocert.nl
-   ```
-8. In **Settings → Pages** van de repository: vul bij **Custom domain** `innocert.nl` in en sla op. Zodra GitHub de DNS heeft geverifieerd (kan tot 24-48 uur duren na het wijzigen van de records) verschijnt de optie **Enforce HTTPS** — vink die aan.
-9. GitHub zorgt er dan automatisch voor dat `www.innocert.nl` doorverwijst naar `innocert.nl`.
+  <article class="cert-detail" id="brl0512">
+    <div class="wrap">
+      <div class="cert-detail-head">
+        <span class="cert-code">BRL 0512</span>
+        <h2>Krachtlasverbindingen met betonstaal en stalen strippen</h2>
+      </div>
+      <div class="cert-detail-body">
+        <p>BRL 0512 is de KOMO-beoordelingsrichtlijn voor krachtlasverbindingen: smeltlasverbindingen tussen betonstaal en stalen strippen (of profielen, kokers e.d.) waarmee constructieve, dragende krachten worden overgebracht in betonconstructies. Dit is een andere categorie laswerk dan de hechtlassen (binddraad-vervangend) onder BRL 0503 — bij BRL 0512 draagt de las zelf constructieve kracht.</p>
+        <p>De richtlijn onderscheidt "aanbevolen" verbindingen volgens NPR 2053 (groep 1) en overige, niet in die norm beschreven verbindingen (groep 2), en maakt onderscheid tussen structureel laswerk (meer dan 10 identieke verbindingen) en incidentele series.</p>
+        <ul>
+          <li>Beoordeling op basis van lasmethodebeschrijvingen (LMB) per type verbinding</li>
+          <li>Lasserskwalificatie en periodieke externe controle van het laswerk</li>
+          <li>Geschikt voor constructiebedrijven die staal-op-betonstaal krachtlassen toepassen</li>
+        </ul>
+        <a href="contact.html" class="btn btn-ghost">Vraag een offerte voor BRL 0512 →</a>
+      </div>
+    </div>
+  </article>
 
-**Let op:** zodra je de `@`-A-records en `www`-CNAME wijzigt, gaat je site live op GitHub Pages in plaats van op de huidige hosting. Zorg dat de site naar tevredenheid is voordat je deze stap zet — e-mail (`mail`-record) blijft intussen gewoon werken via de huidige provider.
+  <article class="cert-detail" id="brl0503">
+    <div class="wrap">
+      <div class="cert-detail-head">
+        <span class="cert-code">BRL 0503</span>
+        <h2>Buig- en vlechtwerk en gehechtlaste (prefab) wapeningsconstructies</h2>
+      </div>
+      <div class="cert-detail-body">
+        <p>BRL 0503 is de KOMO-beoordelingsrichtlijn voor het verwerken van betonstaal tot geknipt en gebogen wapeningsstaal, en voor complete (gehechtlaste) wapeningsconstructies voor toepassing in betonconstructies. Het gaat hier om hechtlassen — binddraad-vervangende verbindingen, dus geen dragende krachtlassen (die vallen onder BRL 0512).</p>
+        <p>De norm kent productcategorieën van 0 (richten, knippen, buigen) tot en met 3 (machinaal gehechtlaste wapeningsnetten) en categorie F voor wapening in dynamisch belaste betonconstructies, elk met eigen kwalificatie- en controle-eisen voor richtproces, lassers en lasmachines.</p>
+        <ul>
+          <li>Van enkelvoudig buigwerk tot machinaal gelaste wapeningsnetten</li>
+          <li>Lasserskwalificatie en periodieke hechtlascontrole conform het IKB-schema</li>
+          <li>Relevant voor wapeningscentrales en prefab-betonproducenten</li>
+        </ul>
+        <a href="contact.html" class="btn btn-ghost">Vraag een offerte voor BRL 0503 →</a>
+      </div>
+    </div>
+  </article>
 
-Wil je dat ik dit met je doorloop zodra je toegang hebt tot het DNS-paneel? Dan kan ik je precies vertellen welk veld je moet aanpassen.
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>Niet zeker welke norm past?</h2>
+      <p>In een kort intakegesprek brengen we samen in kaart welke certificering het beste aansluit op jouw organisatie.</p>
+      <a href="contact.html" class="btn btn-primary">Plan een intakegesprek <span class="btn-arrow">→</span></a>
+    </div>
+  </section>
 
-## 3. Contactformulier laten werken
+</main>
 
-Het formulier op `contact.html` toont nu alleen een bevestigingstekst, maar verstuurt nog niets. Twee makkelijke opties:
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="InnoCert logo">
+          <strong>InnoCert</strong>
+        </div>
+        <p style="color:var(--mist); opacity:.8; max-width:32ch;">Onafhankelijke certificering, audit en kwaliteitscontrole op ZZP-basis.</p>
+      </div>
+      <div>
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="over-ons.html">Over ons</a></li>
+          <li><a href="blog.html">Blog &amp; nieuws</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Normen</h4>
+        <ul>
+          <li><a href="diensten.html#iso9001">ISO 9001</a></li>
+          <li><a href="diensten.html#iso14001">ISO 14001</a></li>
+          <li><a href="diensten.html#nen2767">NEN 2767</a></li>
+          <li><a href="diensten.html#nen1090">NEN 1090</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:inno_cert@outlook.com">inno_cert@outlook.com</a></li>
+          <li><a href="tel:+31638013327">+31 6 38 01 33 27</a></li>
+          <li><a href="contact.html">Contactformulier</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 InnoCert. Alle rechten voorbehouden.</span>
+      <span>KVK 77620224</span>
+    </div>
+  </div>
+</footer>
 
-- **Formspree** (gratis voor laag volume): maak een account aan op formspree.io, vervang `<form id="contact-form">` door `<form id="contact-form" action="https://formspree.io/f/JOUW-ID" method="POST">` en verwijder de `e.preventDefault()`-regel in `js/main.js`.
-- **mailto-link**: simpelste optie, maar opent de eigen e-mailclient van de bezoeker in plaats van het bericht direct te versturen.
-
-Laat het weten als je wilt dat ik een van deze opties direct voor je inricht.
-
-## 4. Inhoud aanpassen
-
-- Teksten staan direct in de HTML-bestanden, makkelijk te vinden en aan te passen.
-- Telefoonnummer en KVK-nummer zijn bijgewerkt met de gegevens die je hebt aangeleverd.
-- De teksten bij **BRL 0512** en **BRL 0503** zijn nu gebaseerd op de daadwerkelijke beoordelingsrichtlijnen die je hebt geüpload. Controleer ze nog even op toon en volledigheid — het zijn beknopte samenvattingen, geen volledige juridische weergave van de BRL's.
-- Nieuwe blogartikelen: kopieer `blog-artikel-voorbeeld.html`, pas titel/tekst aan, en voeg een kaart toe op `blog.html` (en eventueel `index.html`).
-
-## 5. Lokaal bekijken
-
-Geen installatie nodig — open `index.html` direct in je browser, of start lokaal een servertje:
-
-```
-python3 -m http.server 8000
-```
-
-en ga naar `http://localhost:8000`.
+<script src="js/main.js"></script>
+</body>
+</html>

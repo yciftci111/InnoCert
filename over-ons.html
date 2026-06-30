@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Over ons — InnoCert</title>
-<meta name="description" content="Maak kennis met InnoCert: onafhankelijke certificering en audit op ZZP-basis, met persoonlijke begeleiding van intake tot certificaat.">
+<title>Contact — InnoCert</title>
+<meta name="description" content="Neem contact op met InnoCert voor een vrijblijvend intakegesprek over certificering, audit of kwaliteitscontrole.">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -21,9 +21,9 @@
     <nav class="nav-main" id="nav-main">
       <a href="index.html">Home</a>
       <a href="diensten.html">Diensten</a>
-      <a href="over-ons.html" class="active">Over ons</a>
+      <a href="over-ons.html">Over ons</a>
       <a href="blog.html">Blog &amp; Nieuws</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
     <div class="nav-cta">
       <a href="contact.html" class="btn btn-primary">Offerte aanvragen <span class="btn-arrow">→</span></a>
@@ -38,109 +38,73 @@
 
   <section class="page-header">
     <div class="wrap">
-      <p class="eyebrow">Over InnoCert</p>
-      <h1>Eén auditor. Geen wisselende teams.</h1>
-      <p class="lede">InnoCert is een zelfstandig certificerings- en auditbureau dat organisaties begeleidt bij het aantoonbaar maken van kwaliteit, milieuzorg en technische naleving — zonder de overhead van een groot bureau.</p>
+      <p class="eyebrow">Contact</p>
+      <h1>Laten we kennismaken</h1>
+      <p class="lede">Vul het formulier in of neem rechtstreeks contact op. Reactie volgt doorgaans binnen één werkdag.</p>
     </div>
   </section>
 
   <section>
-    <div class="wrap">
-      <div class="split">
-        <div class="figure-frame">
-          <div class="corner tl"></div>
-          <span class="mono" style="color:var(--slate)">Portretfoto volgt</span>
-          <div class="corner br"></div>
+    <div class="wrap split">
+      <form id="contact-form">
+        <div class="form-grid">
+          <div>
+            <label for="naam">Naam</label>
+            <input type="text" id="naam" name="naam" required>
+          </div>
+          <div>
+            <label for="bedrijf">Organisatie</label>
+            <input type="text" id="bedrijf" name="bedrijf">
+          </div>
+          <div>
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="telefoon">Telefoonnummer</label>
+            <input type="tel" id="telefoon" name="telefoon">
+          </div>
+          <div class="full">
+            <label for="norm">Welke norm of dienst?</label>
+            <select id="norm" name="norm">
+              <option>ISO 9001</option>
+              <option>ISO 14001</option>
+              <option>ISO 55000</option>
+              <option>NEN 2767</option>
+              <option>ISO 3834</option>
+              <option>NEN 1090</option>
+              <option>BRL 0512</option>
+              <option>BRL 0503</option>
+              <option>Weet ik nog niet</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="bericht">Bericht</label>
+            <textarea id="bericht" name="bericht" required></textarea>
+          </div>
         </div>
-        <div>
-          <p class="eyebrow">Werkwijze</p>
-          <h2>Praktisch, onafhankelijk, betrokken</h2>
-          <p>Als ZZP'er werk ik zonder lagen tussen jou en de auditor: wat je bespreekt in de intake, kom je terug in het rapport. Geen verrassingen, geen onnodige bureaucratie.</p>
-          <p>Mijn achtergrond ligt in kwaliteitsmanagement en technische beoordeling binnen industrie, bouw en vastgoed — een combinatie die het mogelijk maakt om zowel managementsystemen als technische normen te beoordelen.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <button type="submit" class="btn btn-primary" style="margin-top:1.4em;">Verstuur bericht <span class="btn-arrow">→</span></button>
+        <p class="form-status form-note"></p>
+      </form>
 
-  <section class="section-alt">
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Waar InnoCert voor staat</p>
-          <h2>Vier uitgangspunten</h2>
+      <div class="contact-info">
+        <div class="item">
+          <b>E-mail</b>
+          <a href="mailto:inno_cert@outlook.com">inno_cert@outlook.com</a>
+        </div>
+        <div class="item">
+          <b>Telefoon</b>
+          <a href="tel:+31638013327">+31 6 38 01 33 27</a>
+        </div>
+        <div class="item">
+          <b>KVK</b>
+          <span>77620224</span>
+        </div>
+        <div class="item">
+          <b>Werkgebied</b>
+          <span>Nederland, op locatie of op afstand</span>
         </div>
       </div>
-      <div class="value-list">
-        <div class="value-item">
-          <span class="value-mark">01</span>
-          <div>
-            <h3>Onafhankelijkheid</h3>
-            <p>Een eerlijk oordeel, ook als dat betekent dat er nog werk te doen is voor certificering.</p>
-          </div>
-        </div>
-        <div class="value-item">
-          <span class="value-mark">02</span>
-          <div>
-            <h3>Persoonlijk contact</h3>
-            <p>Eén vast aanspreekpunt gedurende het hele traject — van eerste gesprek tot certificaat.</p>
-          </div>
-        </div>
-        <div class="value-item">
-          <span class="value-mark">03</span>
-          <div>
-            <h3>Praktische rapportage</h3>
-            <p>Bevindingen die direct bruikbaar zijn, zonder onnodig jargon of overbodige bijlagen.</p>
-          </div>
-        </div>
-        <div class="value-item">
-          <span class="value-mark">04</span>
-          <div>
-            <h3>Transparante tarieven</h3>
-            <p>Een heldere offerte vooraf, zodat je weet waar je aan toe bent.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Tijdlijn</p>
-          <h2>Hoe InnoCert is gegroeid</h2>
-        </div>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <span class="timeline-year">2014</span>
-          <h3>Start als zelfstandig auditor</h3>
-          <p>Begonnen met ISO 9001-beoordelingen voor het regionale MKB.</p>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-year">2018</span>
-          <h3>Uitbreiding naar milieu &amp; assetmanagement</h3>
-          <p>ISO 14001 en ISO 55000 toegevoegd aan het dienstenpakket.</p>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-year">2022</span>
-          <h3>Technische normen erbij</h3>
-          <p>Uitbreiding met NEN 2767, ISO 3834 en NEN 1090 voor bouw en industrie.</p>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-year">Vandaag</span>
-          <h3>Acht normen, één aanspreekpunt</h3>
-          <p>InnoCert begeleidt organisaties in uiteenlopende sectoren bij hun certificeringstraject.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-band">
-    <div class="wrap">
-      <h2>Liever even kennismaken?</h2>
-      <p>Een kort gesprek is vrijblijvend en geeft direct duidelijkheid over de vervolgstappen.</p>
-      <a href="contact.html" class="btn btn-primary">Plan een kennismaking <span class="btn-arrow">→</span></a>
     </div>
   </section>
 
