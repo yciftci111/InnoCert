@@ -17,15 +17,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Simple contact form handler (no backend yet — replace with real endpoint)
-  var form = document.querySelector('#contact-form');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var note = form.querySelector('.form-status');
-      if (note) {
-        note.textContent = 'Bedankt! Dit formulier is nog niet gekoppeld aan een verzendservice — zie de README voor hoe je dit aansluit (bijv. Formspree of een eigen e-mailadres).';
-      }
-    });
-  }
+  // Simple form handlers (no backend yet — replace with real endpoint)
+  ['#contact-form', '#freelancer-form'].forEach(function (selector) {
+    var form = document.querySelector(selector);
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var note = form.querySelector('.form-status');
+        if (note) {
+          note.textContent = 'Bedankt! Dit formulier is nog niet gekoppeld aan een verzendservice — zie de README voor hoe je dit aansluit (bijv. Formspree of een eigen e-mailadres).';
+        }
+      });
+    }
+  });
 });

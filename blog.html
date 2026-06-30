@@ -119,10 +119,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .brand-name{ font-family: var(--font-display); font-weight:600; font-size:1.05rem; letter-spacing:-.01em; }
 .brand-name span{ display:block; font-family: var(--font-mono); font-size:.62rem; letter-spacing:.14em; color: var(--steel); text-transform:uppercase; font-weight:500; }
 
-.nav-main{ display:flex; align-items:center; gap: 2.1em; }
+.nav-main{ display:flex; align-items:center; gap: 1.5em; }
 .nav-main a{
-  text-decoration:none; color: var(--ink); font-size:.95rem; font-weight:500;
-  position:relative; padding: .2em 0;
+  text-decoration:none; color: var(--ink); font-size:.92rem; font-weight:500;
+  position:relative; padding: .2em 0; white-space:nowrap;
 }
 .nav-main a.active{ color: var(--steel-dark); }
 .nav-main a::after{
@@ -351,7 +351,7 @@ input:focus, select:focus, textarea:focus{ border-color: var(--steel); }
 .toc a:hover{ border-color: var(--steel); color: var(--steel-dark); }
 
 /* Mobile nav */
-@media (max-width: 880px){
+@media (max-width: 1040px){
   .nav-main{
     position:fixed; top:76px; left:0; right:0; bottom:0; background: var(--paper);
     flex-direction:column; align-items:flex-start; padding: 2em 28px; gap: 1.6em;
